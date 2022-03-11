@@ -1,0 +1,35 @@
+.suggestions {
+  margin: 60px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  overflow: hidden;
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+
+  &__link {
+    display: block;
+
+    img {
+      transition: 500ms;
+    }
+    &:hover {
+      img {
+        transform: scale(1.15);
+      }
+
+      .suggestions__name {
+        color: var(--color-primary);
+      }
+    }
+  }
+
+  &__name {
+    text-align: center;
+    margin: 5px;
+  }
+}

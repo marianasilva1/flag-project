@@ -1,0 +1,57 @@
+.footer {
+  &__social {
+    margin-top: 50px;
+  }
+  &__title {
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    a:hover {
+      color: #7bcbdc;
+    }
+  }
+  &__link {
+    overflow: hidden;
+    &:hover .footer__insta {
+      animation: cssAnimation 0.5s 0s linear;
+    }
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    // grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
+    overflow: hidden;
+    @media screen and (max-width: 1024px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media screen and (max-width: 767px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  &__insta {
+    width: 100%;
+    height: 100%;
+    transition: 250ms;
+  }
+  &__copy {
+    position: relative;
+    text-align: center;
+    padding: 50px 0;
+    margin: 0;
+    transition: 250ms;
+    a:hover {
+      color: var(--color-primary);
+    }
+    a:after {
+      background-color: var(--color-primary);
+    }
+  }
+}
+
+@keyframes cssAnimation {
+  0% {
+    transform: rotate(18deg) scale(3);
+  }
+  100% {
+    transform: rotate(4deg) scale(1);
+  }
+}

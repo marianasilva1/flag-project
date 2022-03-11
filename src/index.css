@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap");
+
+:root {
+  /* color */
+  --color-white: #fcfeff;
+  --color-black: #484242;
+  --color-primary: #7bcbdc;
+  --color-primary-opacity: rgba(122, 202, 220, 0.702);
+  --color-pink: #d11255;
+  --color-secondary: #444c58;
+  --color-lightbrown: #aa865d;
+  /* font */
+  --font-xxs: 0.75rem;
+  --font-xs: 0.875rem;
+  --font-s: 1rem;
+  --font-m: 1.25rem;
+  --font-l: 1.5rem;
+  --font-xl: 2.2rem;
+  --font-xxl: 3.125rem;
+}
+html {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: #484242;
+  font-size: var(--font-s);
+  line-height: 1.4;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: #484242;
+  text-decoration: none;
+  transition: 250ms;
+}
+h1 {
+  font-size: var(--font-xxl);
+  font-family: "Dancing Script", cursive;
+}
+h2 {
+  font-size: var(--font-l);
+  font-family: "Montserrat", sans-serif;
+}
+h3 {
+  font-size: var(--font-m);
+  font-family: "Montserrat", sans-serif;
+}
