@@ -15,7 +15,7 @@ On the Tips Page, you have some text and a converter.
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/marianasilva1/flag-project
 ```
 
 Go to the project directory
